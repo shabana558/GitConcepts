@@ -6,24 +6,22 @@ using System.Threading.Tasks;
 
 namespace GitConcepts
 {
-   public class Reverse
+    public class ReverseNumber
     {
-        public void Main(string[] args)
+        public static void FindReverseNumber()
         {
-
-        
-        Console.WriteLine("please enter number to reverse");
+            Console.WriteLine("please enter number to reverse");
             int number = Convert.ToInt32(Console.ReadLine());
-        int reminder, reverse = 0;
+            int reminder, reverse = 0;
             while (number > 0)
             {
                 reminder = number % 10;
-                reverse = (reverse* 10) + reminder;
+                reverse = (reverse * 10) + reminder;
                 number = number / 10;
 
             }
             Console.WriteLine("After reverse:" + reverse);
         }
 
-        }
     }
+}
